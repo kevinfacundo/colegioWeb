@@ -1,0 +1,28 @@
+.formulario-reunion{
+    display: grid;
+    justify-content: center;
+}
+.elementos-formulario {
+    display: grid;
+    align-content: baseline;
+    grid-template-areas: "a1 a2";
+    padding: 10px;
+    margin: 2px;
+}
+    div{
+        width: 0.5fr;
+    }
+
+    div label {
+        display: flex;
+        justify-content: left;
+        grid-area: a1;
+        color: #000000;
+        background-color: #e1dfe9;
+    }
+    div input{
+        color: #ffffff;
+        grid-area: a2;
+        align-items: right;
+        
+    }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Turnero del colegio</title>
+</head>
+<body class="turnos">
+    <header class="header-turnero">
+        <div>
+            <a href="../index.html">Ir a inicio</a>
+        </div>
+        <div>
+            Saca turno para reuniones
+        </div>
+    </header>
+
+    <h1>Reservar Reunión con Directivos</h1>
+    <form class="formulario-reunion">
+        <div class="elementos-formulario">
+            <label for="nombre">Nombre del Padre/Madre/Tutor:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="elementos-formulario">
+            <label for="apellido">Apellido del Padre/Madre/Tutor:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="elementos-formulario">
+            <label for="nombreEstudiante">Nombre del Estudiante:</label>
+            <input type="text" id="nombreEstudiante" name="nombreEstudiante" required>
+        </div>
+        <div class="elementos-formulario">
+            <label for="nivel">Nivel Educativo:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="">Seleccionar Nivel</option>
+                <option value="inicial">Inicial</option>
+                <option value="primario">Primario</option>
+                <option value="secundario">Secundario</option>
+            </select>
+        </div>
+        <div class="elementos-formulario">
+            <label for="fecha">Fecha de la Reunión:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="elementos-formulario">
+            <label for="hora">Hora de la Reunión:</label>
+            <input type="time" id="hora" name="hora" required>
+        </div>
+        <button type="submit">Reservar Reunión</button>
+    </form>
+    
+</body>
+</html>
