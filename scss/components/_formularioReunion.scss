@@ -1,28 +1,33 @@
-.formulario-reunion{
+.formulario-reunion {
     display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    gap: 10px;
     justify-content: center;
+    font-family: $formFont;
 }
-.elementos-formulario {
-    display: grid;
-    align-content: baseline;
-    grid-template-areas: "a1 a2";
-    padding: 10px;
-    margin: 2px;
-}
-    div{
-        width: 0.5fr;
-    }
-
-    div label {
-        display: flex;
-        justify-content: left;
-        grid-area: a1;
+    label {
+        grid-column: 1; 
+        object-fit: cover;
         color: #000000;
         background-color: #e1dfe9;
+        padding: 10px;
+        margin: 5px;
+        height: 40px;
+        font-family: $formFont;
+        font-size: 1rem;
     }
-    div input{
-        color: #ffffff;
-        grid-area: a2;
-        align-items: right;
-        
+    input,  select, button {
+        grid-column: 2;
+        padding: 10px;
+        margin: 5px;
+        height: 40px;
     }
+    button {
+        width: 90%;
+        border: solid 2.5px #f1ef66;
+        border-radius: 20px;
+        justify-self: center;
+    }
+.elementos-formulario {
+    display: contents;
+}
